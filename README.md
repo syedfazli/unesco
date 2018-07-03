@@ -33,13 +33,13 @@ Download the whole Module. Unzip it and name the folder as <strong>unescotest</s
     	
 <h3>Task Management Documentation</h3>
 <ol>
-<li> Analysis and Task Management of the whole Task. 
+<li>Did the Analysis of the whole task and divide my task into three phase which includes Designing of the form, PHP Prgramming (Server Side), and Browser Compatibilitiy Check 
 <br />Completed in 20 mins. 
-<br />Did the Analysis of the whole task and divide my task into three phase which includes Designing of the form, PHP Prgramming (Server Side), and Browser Compatibilitiy Check </li>	
+</li>	
 
 <li>Developed of the Login form using BootStrap & HTML.
 <br />Completed in 15 mins. 
-</li>>
+</li>
 
 
 <li>Make a connection with the Database of the server using a php code file name connect.php.   
@@ -53,7 +53,7 @@ Download the whole Module. Unzip it and name the folder as <strong>unescotest</s
 	<li>Update Form: observation_edit.php</li>
 	<li>Delete: observation_del.php</li>
 </ul>
-<br />Completed in 30 mins
+Completed in 30 mins
 </li>
 
 
