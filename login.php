@@ -6,22 +6,31 @@ if(isset($_POST) & !empty($_POST)){
     $username = $_POST['username'];
     //$password = password_hash($_POST['$password'], PASSWORD_DEFAULT);
     $password = $_POST['password'];
+
+    //echo $password;
          
-    $query = "SELECT * FROM `users` WHERE username='$username' and password='$password'";
+    $query = "SELECT * FROM `users` WHERE username='$username'";
         
     $result = mysqli_query($connection, $query) or die(mysqli_error($connection));
     $count = mysqli_num_rows($result);
     
     if ($count == 1){
-        
-        while($res = mysqli_fetch_array($result)) {  
-            $_SESSION['user_id'] =$res['id'];
-            $_SESSION['username'] = $res['username'];
+       
+        while($res = mysqli_fetch_array($result)) { 
+            
+            if (!password_verify($password, $res['password'])){
+                $fmsg = "Invalid Login Credentials.";
+                echo $fmsg;
+            } 
+            else{
+                $_SESSION['user_id'] =$res['id'];
+                $_SESSION['username'] = $res['username'];
+                header("Location: observation_manager.php");
+            }
         }
-        header("Location: observation_manager.php");
+        
     }else{
-        $fmsg = "Invalid Login Credentials.";
-        echo $fmsg;
+        
     }
 }
 
