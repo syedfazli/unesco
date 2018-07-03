@@ -15,6 +15,7 @@ $result = mysqli_query($connection, "SELECT * FROM observations ORDER BY id DESC
  
 <body>
     <?php
+    //Check if loggedin or not
     if (isset($_SESSION['username'])){
         $username = $_SESSION['username'];
         echo "Hi " . $username . " ";

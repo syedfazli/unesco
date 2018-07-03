@@ -1,6 +1,12 @@
 <?php
 session_start();
+//including the database connection file
 require('connect.php');
+
+//Check if loggedin or not
+if (!isset($_SESSION['username'])){
+    header("Location: login.php");
+}
 
 if(isset($_POST) & !empty($_POST)){
     $scientificname = $_POST['scientificname'];
@@ -31,17 +37,20 @@ if(isset($_POST) & !empty($_POST)){
         } 
     } 
     else {    
-    
+        // if all the fields are filled (not empty)             
+        //insert data to database
         $result = mysqli_query($connection, 
         "INSERT INTO observations(scientificname,longitude,latitude,date,user_id) 
         VALUES('$scientificname','$longitude','$latitude',str_to_date('$date','%d-%m-%Y'),'$user_id')");   
         
         if($result){
+            //display success message
             echo "<font color='green'>Data added successfully.";
             echo "<br/><a href='observation_manager.php'>View Result</a>";
         }
         else
         {
+            //display unsuccessfull message
             $fmsg = "<font color='red'>Data Not Added Successfully. Error: " . mysqli_error($connection) . "</font><br />";
             echo $fmsg;
         }

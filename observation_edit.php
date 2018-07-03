@@ -4,6 +4,11 @@ session_start();
 //including the database connection file
 require('connect.php');
 
+//Check if loggedin or not
+if (!isset($_SESSION['username'])){
+    header("Location: login.php");
+}
+
 if(isset($_POST['update'])){
     $id = (int) $_GET['id'];
     $scientificname = $_POST['scientificname'];
