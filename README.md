@@ -20,7 +20,7 @@ Download the whole Module. Unzip it and name the folder as <strong>unescotest</s
 <ul>
 	<li>The site will open the Login Page. Please provide the username as <strong>john</strong> and password as <strong>john</strong></li>
  <li>If the login is correct, it will forward the user to the <strong>Observation Manager Page</strong>. Else Shows the login incorrect Message.</li>
-  <ul>
+  </ul>
 
 <h4>Observation Manager</h4>
 <ul>
