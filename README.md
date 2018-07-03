@@ -8,14 +8,8 @@ UNESCO Associate Project officer Job Test
 	<li>PHP 5.5 and above</li>
 	<li>Apache / Tomcat</li>
 	<li>Bootstap 4.1 (incuded)</li>
-	<li>host: 185.14.184.54<br/>
-    	    username: root<br/>
-    	    password: WNqXDV7H2Jtc5kES <br/>
-	</li>
-	<li> database: interview<br/>
-		username: interview<br/>
-		password: LtTZztdTjvV22n2J <br/>
-	</li>
+	<li>host: 185.14.184.54</li>
+	<li>database: interview</li>
 	
 	
 	
