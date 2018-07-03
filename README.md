@@ -32,32 +32,36 @@ Download the whole Module. Unzip it and name the folder as <strong>unescotest</s
 
     	
 <h3>Task Management Documentation</h3>
-1: Analysis and Task Management of the whole Task. 
+<ol>
+<li> Analysis and Task Management of the whole Task. 
 <br />Completed in 20 mins. 
-<br />Did the Analysis of the whole task and divide my task into three phase which includes Designing of the form, PHP Prgramming (Server Side), and Browser Compatibilitiy Check <br />	
+<br />Did the Analysis of the whole task and divide my task into three phase which includes Designing of the form, PHP Prgramming (Server Side), and Browser Compatibilitiy Check </li>	
 
-2: Developed of the Login form using BootStrap & HTML.
+<li>Developed of the Login form using BootStrap & HTML.
 <br />Completed in 15 mins. 
-<br />
+</li>>
 
 
-3: Make a connection with the Database of the server using a php code file name connect.php.   
+<li>Make a connection with the Database of the server using a php code file name connect.php.   
 <br />Completed in 15 mins.
-<br />
+</li>
 
-4: Created a full Observation Mangaer which includes:
+<li>Created a full Observation Mangaer which includes:
 <ul>	
 	<li>View: observation_manager.php</li>
 	<li>Insert Form: observation_add.php</li>
 	<li>Update Form: observation_edit.php</li>
 	<li>Delete: observation_del.php</li>
 </ul>
-<br />Completed in 30 mins<br />	
+<br />Completed in 30 mins
+</li>
 
 
+<li>The work should be compatible with the current latest versions of Chrome and Firefox.	
+<br />Completed in 5 mins
+</li>
 
-5:The work should be compatible with the current latest versions of Chrome and Firefox.	
-<br />Completed in 5 mins	
+<ol>
 
 <ul>	
 	<li>Presented By: Syed Sana ul Haq Fazli<br />
